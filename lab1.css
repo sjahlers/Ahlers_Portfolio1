@@ -1,0 +1,195 @@
+@font-face {
+	font-family: 'FiraSans-Light';
+	src: url('fonts/FiraSans-Light.otf');
+}
+
+@font-face {
+	font-family: 'FiraSans-Regular';
+	src: url('fonts/FiraSans-Regular.otf');
+}
+
+@font-face {
+	font-family: 'FiraSans-SemiBold';
+	src: url('fonts/FiraSans-SemiBold.otf');
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header {
+	text-align: center;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	background-color: white;
+}
+
+header h1, header h2 {
+    display: inline;
+    margin: 20px;
+}
+
+header a {
+	text-decoration: none;
+	color: rgb(164, 198, 42);
+}
+
+body {
+	font-family: FiraSans-Light, Arial, sans-serif;
+	background: url('images/damask.jpg');
+	margin: 30px;
+	position: relative;
+	top: 120px;
+}
+
+h1, h2 {
+	font-family: 'Bad Script', cursive, serif;
+	color: rgb(47, 158, 74);
+}
+
+h3 {
+	font-family: 'Bad Script', cursive, serif;
+	font-size: 1.25em;
+	color: rgb(30, 122, 78); 
+}
+
+.white {
+	background-color: white;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	clear: both;
+}
+
+.center {
+	text-align: center;
+}
+
+	/*Navigation Bar*/
+	
+	nav {
+		text-align: left;
+		background-color: rgb(30, 122, 78); 
+	}
+
+	nav a {
+		font-family: 'Bad Script', cursive, serif;
+		font-size: 25px;
+		text-decoration: none;
+		color: white;
+		display: inline-block;
+		padding: 5px 16px;
+	}
+
+	nav a:hover {
+		background-color: rgb(47, 158, 74);
+	}
+
+/*Home Page*/
+
+#cover {
+	width: 90%;
+	margin: auto;
+}
+
+#introduction {
+	max-width: 50%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0px;
+}
+
+#coverphoto {
+	max-width: 40%;
+	float: right;
+	margin-bottom: 20px;
+}
+
+/*Bio Page*/
+#about img {
+	border-radius: 100%;
+	height: 120px;
+	width: 120px;
+	float: left;
+	margin: 10px;
+}
+
+/*Portfolio Page*/
+
+.portfolio {
+	width: 90%;
+	margin: 20px auto 0px auto;
+}
+
+.portfolio img {
+	max-width: 90%;
+}
+
+.grid-box {
+	display: inline-block;
+    width: 30%;
+    height: 30%;
+    margin: 10px;
+    border: 1px solid black;
+	border-radius: 2px;
+	vertical-align: top;
+	padding: 10px;
+}
+
+/*Resume Page*/
+
+.nobullets {
+	list-style-type: none;
+}
+
+.indent {
+	margin-left: 2%;
+}
+
+/*Media Queries - change layout depending on user screen-size*/
+
+@media(max-width: 875px) {
+	.grid-box {	/*displays two side-by-side*/
+    width: 40%;
+    height: 40%;
+}
+
+@media(max-width: 650px) {
+	header {
+		position: static; 
+	}
+
+	header h1, header h2 {
+		display: block;
+		margin: 20px;
+		font-size: 100%;
+	}
+	
+	nav a { /*change nav display to vertical, center*/
+		display: block;
+		font-size: 100%;
+		padding: 5px 16px;
+		clear: both;
+		text-align: center;
+	}
+	
+	body {
+		position: static;
+	}
+	
+	#cover {
+		margin-top: 20px;
+	}
+	
+	.grid-box { /*displays 1*/
+		display: block;
+		width: 90%;
+		height: 90%;
+	}
+	
+	
+	
